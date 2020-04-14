@@ -1,0 +1,45 @@
+.wrapper {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    width: 300px;
+    margin-left: 10px;
+    z-index: 1200;
+}
+.alert {
+    margin: 0 0 10px;
+    position: relative;
+    right: -310px;
+    transition: all 0.3s;
+    word-wrap: break-word;
+}
+.alert :global .alert {
+    padding-right: 30px;
+    margin: 0;
+}
+.alert :global .alert-success {
+    border-color: #3c763d;
+}
+.alert :global .alert-danger {
+    border-color: #a94442;
+}
+.alert :global .alert-warning {
+    border-color: #8a6d3b;
+}
+.alert :global .alert-info {
+    border-color: #31708f;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.closeButton {
+    margin-top: 1em;
+}
+.pre {
+    max-height: 240px;
+    overflow: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+}
